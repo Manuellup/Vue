@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Intro a Vue.Js</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+                new Vue({
+                    el: '.reactive-text',
+                    data: {
+                        miTexto: 'I am starting with Vue'
+                    }
+                });
+            });
+
+        </script>
+
+    </head>
+
+    <body>
+        <div>
+            <p class="reactive-text">{{ miTexto }}</p>
+        </div>
+    </body>
+
+</html>
